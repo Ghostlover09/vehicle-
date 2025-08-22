@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Navbar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assest/css/style.css">
+</head>
+
+<body>
+
+
+  <header class="sticky-top bg-body-warning">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container d-flex justify-content-between align-items-center">
+
+        <!-- Left: Toggler + Logo -->
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" style="color: aliceblue;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand m-0 ms-2" href="index.html">
+            <img src="assest/image/logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+          </a>
+        </div>
+
+        <!-- Right: Button Group - stays fixed on right always -->
+        <div class="d-flex align-items-center gap-2 order-lg-2">
+          <a href="registration.html" class="btn btn-danger px-3 py-2" target="_blank">
+            <i class="fas fa-plus me-1"></i> +
+            <span class="d-none d-xl-inline ms-1">Registration</span>
+          </a>
+        </div>
+
+        <!-- Center: Navigation - collapsible -->
+        <div class="collapse navbar-collapse justify-content-center order-lg-1" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-warning">
+            <!-- Your nav items here -->
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html" target="_blank">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html" target="_blank">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="signin.html" target="_blank">Sign In</a></li>
+            <li class="nav-item"><a class="nav-link" href="signup.html" target="_blank">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- banner start  here -->
+  <section id="banner">
+    <div class="banner-wrapper">
+      <!-- Fixed Text -->
+      <div class="fixed-text">
+        <h1>Welcome to Our Site</h1>
+        <p>Your tagline goes here</p>
+        <a href="#" class="btn btn-warning">Get Started</a>
+      </div>
+      <div class="container-fluid w-100 " style="--bs-gutter-x: 0;">
+        <div id="bannerCarousel_1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('assest/image/bike1.jpg');">
+              <div class="container h-100 d-flex align-items-center justify-content-center">
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assest/image/car.webp');">
+              <div class="container h-100 d-flex align-items-center justify-content-center">
+              </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('assest/image/bike3.jpg');">
+              <div class="container h-100 d-flex align-items-center justify-content-center">
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel_1" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel_1" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+  </section>
+  <!-- banner end here -->
+  <!-- benifit to choose us start here -->
+  <section class="my-5">
+    <div class="container mt-5 mb-3">
+      <div class="row">
+        <div class="col-md-12">
+          <p class="h2 text-center">Benefit To Choose Us</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid pt-3 pb-3" style="background-color: rgb(233, 233, 233);">
+      <div class="container ">
+        <div class="row ">
+          <div class="col-md-4 text-center">
+            <img src="assest/image/1.webp" class="rounded-circle img-fluid img-hover" alt="Responsive image" id="one">
+            <p class="lead"><b>No Riding Limits</b><br>Odometer Won't Scare You Anymore.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="assest/image/ds.webp" class="rounded-circle img-fluid img-hover" alt="Responsive image" id="one">
+            <p class="lead"><b>Well Maintained</b><br>
+              Regular service and maintenance.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="assest/image/3.webp" class="rounded-circle img-fluid img-hover" alt="Responsive image" id="one">
+            <p class="lead"><b>Secure Payments</b><br>
+Our Payment Partners are Industry Leaders.</p>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 text-center">
+            <img src="assest/image/4.webp" class="rounded-circle img-fluid img-hover" alt="Responsive image" id="one">
+            <p class="lead"><b>No Bullshit</b><br>
+A Day Rent is simply for 24 hrs, We mean it.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="assest/image/5.webp" class="rounded-circle img-fluid img-hover" alt="Responsive image" id="one">
+            <p class="lead"><b>Verified Dealers</b><br>
+Every Single Dealer is Committed to Quality Service.</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="assest/image/6.webp" class="rounded-circle img-fluid img-hover" alt="Responsive image" id="one">
+            <p class="lead"><b>money back Guarantee
+100% Moneyback*</b><br>
+Not Happy With Service, Take Your Money Back.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- benifit to choose us end here -->
+
+
+
+  <!-- Popular model start here -->
+  <!-- Popular Vehicles -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Popular Vehicles</h2>
+      <div class="row g-4">
+
+        <!-- Bike 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 hover-zoom">
+            <img src="assest/image/1bik.jpg" class="card-img-top" alt="Yamaha R15">
+            <div class="card-body text-center">
+              <h5 class="card-title">Yamaha R15</h5>
+              <p class="text-muted">₹800/day</p>
+              <p class="text-warning">⭐⭐⭐⭐☆</p>
+              <a href="#" class="btn btn-primary">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 hover-zoom">
+            <img src="assest/image/1car.jpg" class="card-img-top" alt="Hyundai Creta">
+            <div class="card-body text-center">
+              <h5 class="card-title">Hyundai Creta</h5>
+              <p class="text-muted">₹2000/day</p>
+              <p class="text-warning">⭐⭐⭐⭐⭐</p>
+              <a href="#" class="btn btn-primary">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 hover-zoom">
+            <img src="assest/image/2bik.jpg" class="card-img-top" alt="Royal Enfield" style="height: 275px;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Royal Enfield</h5>
+              <p class="text-muted">₹1000/day</p>
+              <p class="text-warning">⭐⭐⭐⭐⭐</p>
+              <a href="#" class="btn btn-primary">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 hover-zoom">
+            <img src="assest/image/3car.jpg" class="card-img-top" alt="Maruti Swift Dzire">
+            <div class="card-body text-center">
+              <h5 class="card-title">Maruti Swift Dzire</h5>
+              <p class="text-muted">₹1500/day</p>
+              <p class="text-warning">⭐⭐⭐⭐☆</p>
+              <a href="#" class="btn btn-primary">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 hover-zoom">
+            <img src="assest/image/3bik.jpg" class="card-img-top" alt="KTM Duke 390" style="height: 275px;">
+            <div class="card-body text-center">
+              <h5 class="card-title">KTM Duke 390</h5>
+              <p class="text-muted">₹1200/day</p>
+              <p class="text-warning">⭐⭐⭐⭐⭐</p>
+              <a href="#" class="btn btn-primary">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Car 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm border-0 hover-zoom">
+            <img src="assest/image/4car.jpg" class="card-img-top" alt="Toyota Fortuner" style="height: 275px;">
+            <div class="card-body text-center">
+              <h5 class="card-title">Toyota Fortuner</h5>
+              <p class="text-muted">₹5000/day</p>
+              <p class="text-warning">⭐⭐⭐⭐⭐</p>
+              <a href="#" class="btn btn-primary">Rent Now</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Section -->
+  <section class="bg-light py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Happy Customers</h2>
+      <div class="row g-4">
+
+        <!-- Customer 1 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="fst-italic">"Best rental experience! Highly recommend RentMyRide."</p>
+              <h6 class="text-primary mb-0">- Raj Kumar</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 2 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="fst-italic">"Great service and well-maintained vehicles. Booking was easy and quick."</p>
+              <h6 class="text-primary mb-0">- Priya Sharma</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 3 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="fst-italic">"Affordable prices and very friendly staff. Will rent again!"</p>
+              <h6 class="text-primary mb-0">- Aman Verma</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 4 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="fst-italic">"The car was spotless and ran perfectly for my trip. Highly satisfied!"</p>
+              <h6 class="text-primary mb-0">- Neha Gupta</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 5 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="fst-italic">"Bike delivery was on time and the condition was excellent."</p>
+              <h6 class="text-primary mb-0">- Vikram Singh</h6>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer 6 -->
+        <div class="col-md-4">
+          <div class="card shadow-sm h-100 border-0">
+            <div class="card-body">
+              <p class="fst-italic">"Easy to book, affordable, and great customer support!"</p>
+              <h6 class="text-primary mb-0">- Anjali Mehra</h6>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Popular model end here -->
+
+  <!-- dsfhai -->
+
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row">
+
+        <!-- About -->
+        <div class="col-md-4 mb-4">
+          <h5>About RentMyRide</h5>
+          <p>We offer premium bikes and cars for rent at affordable rates, with the best customer service to make every
+            journey memorable.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+            <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+            <li><a href="signin.html" class="text-light text-decoration-none">Sign In</a></li>
+            <li><a href="signup.html" class="text-light text-decoration-none">Sign Up</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-md-4 mb-4">
+          <h5>Contact Us</h5>
+          <p>Email: support@rentmyride.com</p>
+          <p>Phone: +91 98765 43210</p>
+          <div>
+            <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <hr class="bg-light">
+      <div class="text-center">
+        <p class="mb-0">&copy; 2025 RentMyRide. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- dsfkudsgau -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

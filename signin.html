@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sign In - RentMyRide</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="assest/css/style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+  <header class="sticky-top bg-body-warning">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container d-flex justify-content-between align-items-center">
+
+        <!-- Left: Toggler + Logo -->
+        <div class="d-flex align-items-center">
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation" style="color: aliceblue;">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand m-0 ms-2" href="#">
+            <img src="assest/image/logo.png" alt="Logo" width="70" height="70" class="d-inline-block align-text-top">
+          </a>
+        </div>
+
+        <!-- Right: Button Group - stays fixed on right always -->
+<div class="d-flex align-items-center gap-2 order-lg-2">
+  <a href="registration.html" class="btn btn-danger px-3 py-2" target="_blank" >
+    
+    <span class="d-none d-xl-inline ms-1">Registration</span>
+  </a>
+</div>
+
+        <!-- Center: Navigation - collapsible -->
+        <div class="collapse navbar-collapse justify-content-center order-lg-1" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-warning">
+            <!-- Your nav items here -->
+             <li class="nav-item"><a class="nav-link" href="index.html" target="_blank"  >Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html" target="_blank" >Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html" target="_blank" >About</a></li>
+        <li class="nav-item"><a class="nav-link" href="signin.html">Sign In</a></li>
+        <li class="nav-item"><a class="nav-link" href="signup.html" target="_blank" >Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!-- Sign In -->
+<!-- Sign In -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4">Sign In</h2>
+    <p class="text-center text-muted mb-5">
+      Welcome back! Please enter your details to continue your journey with RentMyRide.
+    </p>
+
+    <form class="mx-auto p-4 border rounded shadow-sm bg-light" style="max-width: 400px;">
+      <!-- Email -->
+      <div class="mb-3">
+        <label class="form-label fw-bold">Email Address</label>
+        <input type="email" class="form-control" placeholder="Enter your email" required>
+      </div>
+
+      <!-- Password -->
+      <div class="mb-3">
+        <label class="form-label fw-bold">Password</label>
+        <input type="password" class="form-control" placeholder="Enter your password" required>
+      </div>
+
+      <!-- Remember Me & Forgot Password -->
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="rememberMe">
+          <label class="form-check-label" for="rememberMe">Remember me</label>
+        </div>
+   
+      </div>
+
+      <!-- Sign In Button -->
+      <button class="btn btn-primary w-100">Sign In</button>
+
+      <!-- Divider -->
+      <div class="text-center my-3 text-muted">or</div>
+
+      <!-- Social Login -->
+      <div class="d-grid gap-2">
+         <a href="https://accounts.google.com/o/oauth2/v2/auth?
+  scope=email%20profile&
+  access_type=online&
+  include_granted_scopes=true&
+  response_type=code&
+  redirect_uri=YOUR_REDIRECT_URL&
+  client_id=YOUR_CLIENT_ID"
+  class="btn btn-outline-danger w-100">
+  <i class="bi bi-google"></i> Sign in with Google
+</a>
+        <a href="https://www.facebook.com/v18.0/dialog/oauth?
+  client_id=YOUR_APP_ID&
+  redirect_uri=YOUR_REDIRECT_URL&
+  state=YOUR_RANDOM_STRING"
+  class="btn btn-outline-primary w-100">
+  <i class="bi bi-facebook"></i> Sign in with Facebook
+</a>
+      </div>
+
+      <!-- Sign Up Link -->
+      <p class="text-center mt-4 mb-0">
+        Don't have an account? <a href="signup.html" class="text-decoration-none">Sign Up</a>
+      </p>
+    </form>
+  </div>
+</section>
+
+
+<!-- Forgot Password Link -->
+<a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">
+  Forgot password?
+</a>
+
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 class="modal-title" id="forgotPasswordModalLabel">Forgot Password</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <!-- Modal Body -->
+      <div class="modal-body">
+        <p class="text-muted">Enter your registered email and we’ll send you a link to reset your password.</p>
+        <form>
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" placeholder="Enter your email" required>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Send Reset Link</button>
+        </form>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+      
+      <!-- About -->
+      <div class="col-md-4 mb-4">
+        <h5>About RentMyRide</h5>
+        <p>We offer premium bikes and cars for rent at affordable rates, with the best customer service to make every journey memorable.</p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
+          <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+          <li><a href="signin.html" class="text-light text-decoration-none">Sign In</a></li>
+          <li><a href="signup.html" class="text-light text-decoration-none">Sign Up</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact -->
+      <div class="col-md-4 mb-4">
+        <h5>Contact Us</h5>
+        <p>Email: support@rentmyride.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <div>
+          <a href="#" class="text-light me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    
+    <hr class="bg-light">
+    <div class="text-center">
+      <p class="mb-0">&copy; 2025 RentMyRide. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
