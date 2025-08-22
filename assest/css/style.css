@@ -1,0 +1,108 @@
+body {
+    font-size: 22px;
+}
+
+header {
+    background-color: rgb(120, 154, 255);
+}
+
+.nav-link {
+
+    color: white;
+}
+
+.nav-link:hover {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.carousel-item {
+  height: 80vh; /* Or set a fixed height like 600px */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    /* Optional: dark overlay for readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fixed-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Optional dark overlay */
+    padding: 30px;
+    border-radius: 10px;
+}
+h2{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.one_one{
+    border: 2px solid red;
+
+}
+.img-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border: 2px solid #ffffff;
+}
+.card {
+  min-width: 100%; /* Ensures full width on mobile */
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .card {
+    min-width: auto;
+
+  }
+}
+
+#cardCarousel .carousel-control-prev
+{
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  margin-right: 25px;
+}
+#cardCarousel .carousel-control-next {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5%;
+  margin-right: 25px;
+}
+
+
+ .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Optional image zoom inside card */
+.hover-zoom {
+  transition: transform 0.3s ease-in-out;
+}
+.hover-zoom:hover {
+  transform: scale(1.05);
+}
